@@ -1,0 +1,166 @@
+<!DOCTYPE.html>
+<html>
+<head>
+
+<title>Continental Hotel Reservation Form</title>
+<style>
+body
+{
+color:black;
+font-family:'Times New Roman';
+}
+div{
+font-size: 13px;
+ width: 440px;
+ margin: auto;
+ text-align: center;
+  padding: 10px;
+background-color:grey;
+}
+h1{
+ color: red;
+ text-align: center;
+  font-family: Arial;
+  }
+
+table
+{
+   width: 100%;
+   background-color: #cce5ff;
+   margin: auto;
+   border: 2px solid black;
+   border-spacing: 2px;
+}
+td {
+ border: 1px solid black;
+padding: 5px;
+width:130px;
+}
+td:first-child:not(.submit-row)  {
+    width: 30%;
+    text-align: right;
+    font-weight: bold;
+     font-size: 15px;
+}
+
+td:nth-child(2) {
+    width: 70%;
+    text-align: left;
+}
+
+
+#departure1, #departure2 
+{
+    width: 46%;
+    box-sizing: border-box;
+}
+.submit-row {
+    text-align: center;
+}
+
+
+</style>
+</head> 
+
+<body>
+<div>
+<h1>Continental Hotel Reservation Form</h1>
+<form>
+<table>
+
+<tr>
+<td>  
+<label for="name">Name:</label>
+</td>
+<td>
+<input type="text" id="name" placeholder="Enter your name">
+</td>
+</tr>
+
+<tr>
+<td>  
+<label for="mail">email:</label>
+</td>
+<td>
+<input type="email" id="mail" value="info@continental.pk">
+</td>
+</tr>
+
+<tr>
+<td>  
+<label for="mobile">Mobile no:</label>
+</td>
+<td>
+<input type="tel" id="mobile" placeholder="Enter your cell number">
+</td>
+</tr>
+
+<tr>
+<td>  
+<label for="arrival">Arrival Time:</label>
+</td>
+<td>
+<input type="text" id="arrival" placeholder="Enter your arrival time">
+</td>
+</tr>
+
+<tr>
+<td>  
+<label for="departure1">Departure:</label>
+</td>
+<td>
+<input type="text" id="departure1" >
+<input type="text" id="departure2" >
+</td>
+</tr>
+
+<tr>
+<td>  
+Room Type
+</td>
+<td>
+<input type="radio" name="roomtype">Single
+<input type="radio"  name="roomtype">Double<br>
+<input type="radio" name="roomtype">Presidential Suite<br>
+</td>
+</tr>
+
+<tr>
+<td>  
+Preferences
+</td>
+<td>
+<input type="checkbox" name="preferences" >Non-Smoking<br>
+<input type="checkbox"  name="preferences" >Internet<br>
+<input type="checkbox" name="preferences" >Firm Mattress<br>
+</td>
+</tr>
+
+<tr>
+<td>  
+Mode of Payment
+</td>
+<td>
+<input type="checkbox" name="payment" >Cash
+<input type="checkbox"  name="payment" >Check<br>
+<input type="checkbox" name="payment" >Credit Card
+<select id="card" name="card">
+<option value="">SelectCard</option>
+<option value="Visa">Visa</option>
+<option value="MasterCard">MasterCard</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="submit-row">
+<input type="submit" value="Send Data">
+</td>
+</tr>
+
+
+</table>
+</form>
+</div>
+</body>
+</html>
